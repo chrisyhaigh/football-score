@@ -27,6 +27,7 @@ const Main = () => {
               )
           }
           />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </React.StrictMode>

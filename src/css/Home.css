@@ -1,0 +1,35 @@
+.home-heading {
+    padding: 10px;
+}
+
+.span-name {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.4px
+}
+
+.league-box-container {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.league-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(220, 220, 220);
+    width: 300px;
+    margin: 20px;
+    height: 100px;
+    border-radius: 1cqb;
+}
+
+.league-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
