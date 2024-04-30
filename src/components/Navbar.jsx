@@ -9,6 +9,9 @@ const Navbar = () => {
                 <div className="logo-container">
                     <img className="logo-image" width="60" src="src\images\image_processing20200410-18222-12ilqee.png"></img>
                 </div>
+                <div className="nav-name-container">
+                    <p className="nav-name">GOAL FOOTBALL</p>
+                </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                     </button>

@@ -4,6 +4,21 @@
     width: 100%;
 }
 
+.nav-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-name {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: -5px;
+    padding-left: 10px;
+}
+
 ul li {
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
@@ -14,4 +29,5 @@ ul li {
 
 .logo-image {
     margin-left: 20px;
+    margin-top: 0px;
 }

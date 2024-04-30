@@ -12,8 +12,8 @@ const Home = () => {
             </div>
             <div className="home-container">
                 <div className="home-heading">
-                    <h3 className="welcome-message text-center">Welcome to <span className="span-name">GOAL FOOTBALL</span></h3>
-                    <h6 className="choose-league-message text-center">Select a league for results, scorers and assists data</h6>
+                    <h5 className="welcome-message text-center">Welcome to <span className="span-name">GOAL FOOTBALL</span></h5>
+                    <p className="choose-league-message text-center">Select a league for results, scorers and assists data</p>
                 </div>
                 <div class="league-box-container">
                     <div class="league-col">
