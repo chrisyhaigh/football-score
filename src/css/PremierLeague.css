@@ -1,0 +1,9 @@
+.premierleague-container {
+    padding: 20px;
+}
+
+.premierleague-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

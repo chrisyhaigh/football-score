@@ -1,0 +1,9 @@
+.ligue1-container {
+    padding: 20px;
+}
+
+.ligue1-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

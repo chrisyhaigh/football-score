@@ -44,6 +44,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
+                <Sidebar isOpen={sideBarVisible} onClose={toggleSideBar} />
             </div>
         </nav>
     )

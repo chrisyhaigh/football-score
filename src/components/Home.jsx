@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import '../css/Home.css';
+import Sidebar from "./Sidebar";
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
         <div>
             <div className="navbar-heading">
                 <Navbar />
+                <Sidebar />
             </div>
             <div className="home-container">
                 <div className="home-heading">

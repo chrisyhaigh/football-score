@@ -1,0 +1,10 @@
+.bundesliga-container {
+    padding: 20px;
+}
+
+.bundesliga-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

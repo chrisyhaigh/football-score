@@ -12,7 +12,7 @@
 .landing-heading {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   color: white;
   margin-bottom: 10px;
@@ -26,10 +26,10 @@
 }
 
 .football-image {
-  width: 50px;
-  margin-bottom: 10px;
+  width: 72px;
+  margin-bottom: 15px;
   padding: 2px;
-  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .enter-button {

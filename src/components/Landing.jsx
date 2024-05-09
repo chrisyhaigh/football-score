@@ -9,7 +9,7 @@ const Landing = ({ onEnterClick }) => {
 
       <div className='landing-container'>
         <div className='landing-heading'>
-          <h1 className='logo-name'>Goal Football<img className="football-image" src="src\images\football_PNG52789.png"></img></h1>
+        <img className="football-image" src="src\images\image_processing20200410-18222-12ilqee.png"></img><h1 className='logo-name'>Goal Football</h1>
         </div>
         <div className='landing-button'>
           <button onClick={onEnterClick} className='enter-button'>ENTER</button>

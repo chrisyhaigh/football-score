@@ -1,0 +1,9 @@
+.eredivisie-container {
+    padding: 20px;
+}
+
+.eredivisie-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

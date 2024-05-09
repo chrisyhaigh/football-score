@@ -1,0 +1,9 @@
+.serieA-container {
+    padding: 20px;
+}
+
+.serieA-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

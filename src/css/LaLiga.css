@@ -1,0 +1,9 @@
+.laliga-container {
+    padding: 20px;
+}
+
+.laliga-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
