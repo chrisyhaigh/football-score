@@ -16,7 +16,7 @@ const Home = () => {
             <div className="home-container">
                 <div className="home-heading">
                     <h5 className="welcome-message text-center">Welcome to <span className="span-name">GOAL FOOTBALL</span></h5>
-                    <p className="choose-league-message text-center">Select a league for results, scorers and assists data</p>
+                    <p className="choose-league-message text-center">Select a league for tables, results, scorers and assists data</p>
                 </div>
                 <div class="league-box-container">
                     <div class="league-col">
@@ -58,6 +58,13 @@ const Home = () => {
                             </div>
                         </Link>
                         <Link to="/serieA">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <img width="160" src="src\league-logos\Serie A 2021 Logo - Download Free PNG.png"></img>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to="/tables">
                             <div class="league-box">
                                 <div class="league-content">
                                     <img width="160" src="src\league-logos\Serie A 2021 Logo - Download Free PNG.png"></img>
