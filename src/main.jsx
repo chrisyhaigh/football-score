@@ -12,6 +12,14 @@ import PremierLeague from './components/PremierLeague.jsx'
 import SerieA from './components/SerieA.jsx'
 import './index.css'
 
+// development routes
+import Tables from './components/Tables.jsx'
+import Assists from './components/Assists.jsx'
+import Results from './components/Results.jsx'
+import Scorers from './components/Scorers.jsx'
+
+
+
 const Main = () => {
   const [enteredSite, setEnteredSite] = useState(false);
 
@@ -40,6 +48,13 @@ const Main = () => {
           <Route path="/ligue1" element={<Ligue1 />} />
           <Route path="/premierleague" element={<PremierLeague />} />
           <Route path="/serieA" element={<SerieA />} />
+
+          {/* developmentroutes */}
+          <Route path="/tables" element={<Tables />} />
+          <Route path="/assists" element={<Assists />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/scorers" element={<Scorers />} />
+
         </Routes>
       </Router>
     </React.StrictMode>

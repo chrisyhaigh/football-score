@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../css/Navbar.css'
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
@@ -13,9 +13,11 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
-                <div className="logo-container">
-                    <img className="logo-image" src="src\images\image_processing20200410-18222-12ilqee.png" alt="Logo" />
-                </div>
+                <Link to="/home">
+                    <div className="logo-container">
+                        <img className="logo-image" src="src\images\image_processing20200410-18222-12ilqee.png" alt="Logo" />
+                    </div>
+                </Link>
                 <div className="nav-name-container">
                     <p className="nav-name">GOAL FOOTBALL</p>
                 </div>

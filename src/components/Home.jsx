@@ -64,10 +64,33 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                        <div className="league-col">
                         <Link to="/tables">
                             <div class="league-box">
                                 <div class="league-content">
-                                    <img width="160" src="src\league-logos\Serie A 2021 Logo - Download Free PNG.png"></img>
+                                    <h3>TABLES</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to="/tables">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <h3>SCORERS</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to="/tables">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <h3>RESULTS</h3>
+                                </div>
+                            </div>
+                        </Link>
+                        </div>
+                        <Link to="/tables">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <h3>ASSISTS</h3>
                                 </div>
                             </div>
                         </Link>
