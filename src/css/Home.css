@@ -1,5 +1,21 @@
-body {
+html, body {
     background-color: rgb(239, 239, 239);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.navbar-heading {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.home-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .home-heading {
@@ -18,27 +34,42 @@ body {
 }
 
 .league-box-container {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.league-col {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .league-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: rgb(231, 228, 228);
-    width: 250px;
-    margin: 2px;
-    height: 100px;
-    border-radius: 2cqb;
+    margin: 8px;
+    padding: 12px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.league-box:hover {
+    background-color: rgb(204, 204, 204);
+    transform: scale(1.05);
+}
+
+.league-content img {
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 650px) {
     .league-box {
-        width: 200px;
+        width: 180px;
     }
 }
 
@@ -62,4 +93,6 @@ body {
 .league-box:hover {
     cursor: pointer;
 }
+
+
 

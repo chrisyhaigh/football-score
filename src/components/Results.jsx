@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/Results.css';
 import Navbar from "./Navbar";
+import BottomBar from "./BottomBar";
 
 const Results = () => {
 
@@ -12,6 +13,7 @@ const Results = () => {
                     <h3 className="results-heading">Results</h3>
                 </div>
             </div>
+            <BottomBar />
         </div>
     )
 

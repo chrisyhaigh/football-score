@@ -6,6 +6,10 @@ const BottomBar = () => {
     return (
         <nav className="bottombar-container">
             <footer className="bottom-footer">
+                <NavLink to="/home" className="nav-element-container" activeClassName="active">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </NavLink>
                 <NavLink to="/tables" className="nav-element-container" activeClassName="active">
                     <i className="fa-solid fa-table"></i>
                     <p>Tables</p>

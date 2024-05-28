@@ -29,8 +29,6 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                    </div>
-                    <div className="league-col">
                         <Link to="/laliga">
                             <div class="league-box">
                                 <div class="league-content">
@@ -41,12 +39,10 @@ const Home = () => {
                         <Link to="/championship">
                             <div class="league-box">
                                 <div class="league-content">
-                                    <img width="60" src="src\league-logos\efl-logo.png"></img>
+                                    <img width="68" src="src\league-logos\efl-logo.png"></img>
                                 </div>
                             </div>
                         </Link>
-                    </div>
-                    <div className="league-col">
                         <Link to="/premeiraliga">
                             <div class="league-box">
                                 <div class="league-content">
@@ -57,16 +53,14 @@ const Home = () => {
                         <Link to="/eredivisie">
                             <div class="league-box">
                                 <div class="league-content">
-                                    <img width="70" src="src\league-logos\eredivisie-logo-png-transparent.png"></img>
+                                    <img width="80" src="src\league-logos\eredivisie-logo-png-transparent.png"></img>
                                 </div>
                             </div>
                         </Link>
-                    </div>
-                    <div className="league-col">
                         <Link to="/ligue1">
                             <div class="league-box">
                                 <div class="league-content">
-                                    <img width="90" src="src\league-logos\ligue-1-logo-0.png"></img>
+                                    <img width="80" src="src\league-logos\ligue-1-logo-0.png"></img>
                                 </div>
                             </div>
                         </Link>
