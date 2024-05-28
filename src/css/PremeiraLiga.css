@@ -1,0 +1,9 @@
+.premeiraliga-container {
+    padding: 20px;
+}
+
+.premeiraliga-heading-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

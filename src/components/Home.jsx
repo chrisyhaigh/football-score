@@ -41,6 +41,20 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                        <Link to="/championship">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <img width="60" src="src\league-logos\efl-logo.png"></img>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to="/premeiraliga">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <img width="55" src="src\league-logos\Portuguese-Primeira-Liga-Logo.png"></img>
+                                </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="league-col">
                         <Link to="/eredivisie">
@@ -60,7 +74,7 @@ const Home = () => {
                         <Link to="/serieA">
                             <div class="league-box">
                                 <div class="league-content">
-                                    <img width="160" src="src\league-logos\Serie A 2021 Logo - Download Free PNG.png"></img>
+                                    <img width="140" src="src\league-logos\Serie A 2021 Logo - Download Free PNG.png"></img>
                                 </div>
                             </div>
                         </Link>
@@ -72,28 +86,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/tables">
-                            <div class="league-box">
-                                <div class="league-content">
-                                    <h3>SCORERS</h3>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/tables">
-                            <div class="league-box">
-                                <div class="league-content">
-                                    <h3>RESULTS</h3>
-                                </div>
-                            </div>
-                        </Link>
                         </div>
-                        <Link to="/tables">
-                            <div class="league-box">
-                                <div class="league-content">
-                                    <h3>ASSISTS</h3>
-                                </div>
-                            </div>
-                        </Link>
                     </div>
                 </div>
             </div>
