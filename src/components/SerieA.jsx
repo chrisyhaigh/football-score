@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/SerieA.css';
 import Navbar from "./Navbar";
+import BottomBar from "./BottomBar";
 
 const SerieA = () => {
     return (
@@ -15,6 +16,7 @@ const SerieA = () => {
                     </select>
                 </div>
             </div>  
+            <BottomBar />
         </div>
     )
 }

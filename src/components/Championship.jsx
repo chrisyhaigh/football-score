@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/Championship.css';
 import Navbar from "./Navbar";
+import BottomBar from "./BottomBar";
 
 const Championship = () => {
     return (
@@ -14,7 +15,8 @@ const Championship = () => {
                         <option className="season-option"></option>
                     </select>
                 </div>
-            </div>  
+            </div>
+            <BottomBar />  
         </div>
     )
 }

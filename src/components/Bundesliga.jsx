@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/Bundesliga.css';
 import Navbar from "./Navbar";
+import BottomBar from "./BottomBar";
 
 const Bundesliga = () => {
     return (
@@ -14,7 +15,8 @@ const Bundesliga = () => {
                         <option className="season-option"></option>
                     </select>
                 </div>
-            </div>  
+            </div>
+            <BottomBar />  
         </div>
     )
 }

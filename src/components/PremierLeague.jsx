@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/PremierLeague.css';
 import Navbar from "./Navbar";
+import BottomBar from "./BottomBar";
 
 const PremierLeague = () => {
     return (
@@ -14,7 +15,8 @@ const PremierLeague = () => {
                         <option className="season-option"></option>
                     </select>
                 </div>
-            </div>  
+            </div>
+            <BottomBar />  
         </div>
     )
 }

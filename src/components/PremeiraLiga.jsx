@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/PremeiraLiga.css';
 import Navbar from "./Navbar";
+import BottomBar from "./BottomBar";
 
 const PremeiraLiga = () => {
     return (
@@ -15,6 +16,7 @@ const PremeiraLiga = () => {
                     </select>
                 </div>
             </div>  
+            <BottomBar />
         </div>
     )
 }

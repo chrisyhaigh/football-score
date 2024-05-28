@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import '../css/Navbar.css'
 import { NavLink, Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
 
 const Navbar = () => {
     const [sideBarVisible, setSideBarVisible] = useState(false);
