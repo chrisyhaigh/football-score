@@ -27,22 +27,13 @@ const Navbar = () => {
                 <div className={`collapse navbar-collapse ${sideBarVisible ? 'show' : ''}`} id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/premierleague" className="nav-link active" aria-current="page">PREMIER LEAGUE</NavLink>
+                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/tables" className="nav-link active" aria-current="page">TABLES</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/bundesliga" className="nav-link">BUNDESLIGA</NavLink>
+                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/scorers" className="nav-link">SCORERS</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/ligue1" className="nav-link">LIGUE 1</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/laliga" className="nav-link">LA LIGA</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/eredivisie" className="nav-link">EREDIVISIE</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/serieA" className="nav-link">SERIE A</NavLink>
+                            <NavLink style={{textDecoration: 'none', color: 'black'}} to="/results" className="nav-link">RESULTS</NavLink>
                         </li>
                     </ul>
                 </div>

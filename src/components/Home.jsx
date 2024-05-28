@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import '../css/Home.css';
-import Sidebar from "./Sidebar";
+import BottomBar from "./BottomBar";
 
 const Home = () => {
 
@@ -11,13 +11,8 @@ const Home = () => {
         <div>
             <div className="navbar-heading">
                 <Navbar />
-                <Sidebar />
             </div>
             <div className="home-container">
-                <div className="home-heading">
-                    <h5 className="welcome-message text-center">Welcome to <span className="span-name">GOAL FOOTBALL</span></h5>
-                    <p className="choose-league-message text-center">Select a league for tables, results, scorers and assists data</p>
-                </div>
                 <div class="league-box-container">
                     <div class="league-col">
                         <Link to="/premierleague">
@@ -34,6 +29,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                    </div>
+                    <div className="league-col">
                         <Link to="/laliga">
                             <div class="league-box">
                                 <div class="league-content">
@@ -48,6 +45,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                    </div>
+                    <div className="league-col">
                         <Link to="/premeiraliga">
                             <div class="league-box">
                                 <div class="league-content">
@@ -55,8 +54,6 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                    </div>
-                    <div className="league-col">
                         <Link to="/eredivisie">
                             <div class="league-box">
                                 <div class="league-content">
@@ -64,6 +61,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                    </div>
+                    <div className="league-col">
                         <Link to="/ligue1">
                             <div class="league-box">
                                 <div class="league-content">
@@ -78,18 +77,10 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                        <div className="league-col">
-                        <Link to="/tables">
-                            <div class="league-box">
-                                <div class="league-content">
-                                    <h3>TABLES</h3>
-                                </div>
-                            </div>
-                        </Link>
-                        </div>
                     </div>
                 </div>
             </div>
+            <BottomBar />
         </div>
     );
 }

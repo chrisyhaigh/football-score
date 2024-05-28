@@ -25,11 +25,22 @@
   font-style: normal;
 }
 
+
 .football-image {
   width: 72px;
   margin-bottom: 15px;
   padding: 2px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-name {
+    font-size: 42px;
+  }
+
+  .football-image {
+    width: 52px;
+  }
 }
 
 .enter-button {
