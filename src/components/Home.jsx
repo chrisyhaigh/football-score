@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import '../css/Home.css';
 import BottomBar from "./BottomBar";
+import Tables from "./Tables";
 
 const Home = () => {
 
@@ -68,6 +69,13 @@ const Home = () => {
                             <div class="league-box">
                                 <div class="league-content">
                                     <img width="140" src="src\league-logos\Serie A 2021 Logo - Download Free PNG.png"></img>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link to="/tables">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <p>Tables</p>
                                 </div>
                             </div>
                         </Link>

@@ -1,0 +1,14 @@
+.tables-container {
+    margin: 8px;
+    padding: 12px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    bottom: 100%;
+}
+
+.tables-heading {
+    text-align: left;
+}
