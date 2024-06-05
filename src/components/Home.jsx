@@ -79,6 +79,13 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
+                        <Link to="/scorers">
+                            <div class="league-box">
+                                <div class="league-content">
+                                    <p>Scorers</p>
+                                </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
