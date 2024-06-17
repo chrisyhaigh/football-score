@@ -53,8 +53,12 @@
   font-family: "Staatliches", sans-serif;
   height: auto;
   border-radius: 1cqb;
+  transition: transform 0.1s;
 }
 
+
 .enter-button:hover {
-  color: white;
+  transform: scale(1.01);
+  font-style: bold;
 }
+
