@@ -72,24 +72,12 @@ const Home = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/tables">
-                            <div class="league-box">
-                                <div class="league-content">
-                                    <p>Tables</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/scorers">
-                            <div class="league-box">
-                                <div class="league-content">
-                                    <p>Scorers</p>
-                                </div>
-                            </div>
-                        </Link>
                     </div>
                 </div>
             </div>
-            <BottomBar />
+            <div className="footer-nav">
+                <BottomBar />
+            </div>
         </div>
     );
 }

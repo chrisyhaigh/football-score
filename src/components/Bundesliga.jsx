@@ -16,7 +16,9 @@ const Bundesliga = () => {
                     </select>
                 </div>
             </div>
-            <BottomBar />  
+            <div className="footer-nav">
+                <BottomBar />
+            </div>
         </div>
     )
 }

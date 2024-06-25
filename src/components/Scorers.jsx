@@ -56,7 +56,7 @@ const Scorers = () => {
                             {scorerData ? scorerData.map((scorer, index) => (
                                 <tr scope="row" key={index}>
                                     <td className="scorer-name">{scorer.player.name}</td>
-                                    <td className="scorer-team"><img src={scorer.team.crest} width="20"></img>{scorer.team.name}</td>
+                                    <td className="scorer-team"><img src={scorer.team.crest} width="20"></img>{scorer.team.shortName}</td>
                                     <td className="scorer-gamesplayed">{scorer.playedMatches}</td>
                                     <td className="scorer-goals">{scorer.goals}</td>
                                 </tr>
