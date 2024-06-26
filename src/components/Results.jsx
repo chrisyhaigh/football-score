@@ -1,8 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import '../css/Results.css';
-import Navbar from "./Navbar";
-import BottomBar from "./BottomBar";
 
 const Results = () => {
     const [selectedMatchday, setSelectedMatchday] = useState("1");
@@ -33,30 +31,31 @@ const Results = () => {
 
     return (
         <div>
-            <Navbar />
             <div className="results-container">
                 <div className="results-heading-container">
-                    <h3 className="results-heading">Results</h3>
+                    <h6 className="results-heading ms-2">Results</h6>
+                    <select>
+                        <option></option>
+                    </select>
+                </div>
+                <div className="results-table-container">
+                    <table className="table">
+                        <tbody>
+                            {resultsData && resultsData.map((result, index) => (
+                                <tr key={index}>
+                                    <td className="home-team">{result.homeTeam.shortName}</td>
+                                    <td><img className="team-badge" src={result.homeTeam.crest} alt={`${result.homeTeam.name} crest`} /></td>
+                                    <td className="home-goal-score">{result.score.fullTime.home}</td>
+                                    <td>-</td>
+                                    <td className="away-goal-score">{result.score.fullTime.away}</td>
+                                    <td><img className="team-badge" src={result.awayTeam.crest} alt={`${result.awayTeam.name} crest`} /></td>
+                                    <td className="away-team">{result.awayTeam.shortName}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div className="results-table-container">
-                <table className="table">
-                    <tbody>
-                        {resultsData && resultsData.map((result, index) => (
-                            <tr key={index}>
-                                <td className="home-team">{result.homeTeam.shortName}</td>
-                                <td><img className="team-badge" src={result.homeTeam.crest} alt={`${result.homeTeam.name} crest`} /></td>
-                                <td className="home-goal-score">{result.score.fullTime.home}</td>
-                                <td>-</td>
-                                <td className="away-goal-score">{result.score.fullTime.away}</td>
-                                <td><img className="team-badge" src={result.awayTeam.crest} alt={`${result.awayTeam.name} crest`} /></td>
-                                <td className="away-team">{result.awayTeam.shortName}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-            <BottomBar />
         </div>
     );
 }

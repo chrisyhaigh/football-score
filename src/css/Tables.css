@@ -1,9 +1,9 @@
 .tables-container {
-    margin: 8px;
-    padding: 12px;
+    background-color: rgb(212, 212, 212);
+    font-size: 11px;
     height: auto;
-    border: 1px solid #ccc;
     border-radius: 10px;
+    padding: 5px;
     text-align: center;
     cursor: pointer;
     bottom: 100%;

@@ -14,84 +14,11 @@ html, body {
 }
 
 .home-container {
-    padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .home-heading {
     padding-top: 20px;
-}
-
-.span-name {
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.4px
-}
-
-.choose-league-message {
-    font-size: 16px;
-}
-
-.league-box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.league-col {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.league-box {
-    margin: 8px;
-    padding: 12px;
-    width: 180px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.league-box:hover {
-    background-color: rgb(204, 204, 204);
-    transform: scale(1.05);
-}
-
-.league-content img {
-    display: block;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 650px) {
-    .league-box {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .league-box {
-        width: 140px;
-    }
-
-    .choose-league-message {
-        font-size: 13px;
-    }
-}
-
-.league-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.league-box:hover {
-    cursor: pointer;
 }
 
 

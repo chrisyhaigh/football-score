@@ -1,8 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import '../css/Scorers.css';
-import Navbar from "./Navbar";
-import BottomBar from "./BottomBar";
 
 
 const Scorers = () => {
@@ -37,10 +35,9 @@ const Scorers = () => {
 
     return (
         <div>
-            <Navbar />
                 <div className="scorers-container">
                     <div className="scorers-heading-container">
-                        <h3 className="scorers-heading">Top Scorers</h3>
+                        <h6 className="scorers-heading ms-2">Top Scorers</h6>
                     </div>
                     <div className="scorers-table-container">
                         <table className="table">
@@ -56,7 +53,7 @@ const Scorers = () => {
                             {scorerData ? scorerData.map((scorer, index) => (
                                 <tr scope="row" key={index}>
                                     <td className="scorer-name">{scorer.player.name}</td>
-                                    <td className="scorer-team"><img src={scorer.team.crest} width="20"></img>{scorer.team.shortName}</td>
+                                    <td className="scorer-team"><img src={scorer.team.crest} className="me-1" width="16"></img>{scorer.team.shortName}</td>
                                     <td className="scorer-gamesplayed">{scorer.playedMatches}</td>
                                     <td className="scorer-goals">{scorer.goals}</td>
                                 </tr>
@@ -65,7 +62,6 @@ const Scorers = () => {
                         </table>
                     </div>
                 </div>
-            <BottomBar />
         </div>
     )
 

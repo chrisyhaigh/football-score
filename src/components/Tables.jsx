@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import '../css/Tables.css';
-import BottomBar from "./BottomBar";
 
 const Tables = () => {
 
@@ -37,7 +36,7 @@ const Tables = () => {
         <div>
                 <div className="tables-container">
                     <div className="tables-heading-container">
-                        <h3 className="tables-heading">League Table</h3>
+                        <h6 className="tables-heading ms-2">League Table</h6>
                     </div>
                     <div className="league-table-container">
                         <table className="table">
@@ -59,7 +58,7 @@ const Tables = () => {
                             {leagueData ? leagueData.map((team, index) => (
                                 <tr scope="row" key={index}>
                                     <td className="team-position">{team.position}</td>
-                                    <td className="text-start team-name"><img src={team.team.crest} width="25"></img> {team.team.shortName}</td>
+                                    <td className="text-start team-name"><img src={team.team.crest} width="16"></img> {team.team.shortName}</td>
                                     <td className="played-games">{team.playedGames}</td>
                                     <td className="won-games">{team.won}</td>
                                     <td className="drawn-games">{team.draw}</td>
@@ -74,7 +73,6 @@ const Tables = () => {
                         </table>
                     </div>
                 </div>
-            <BottomBar />
         </div>
     )
 
