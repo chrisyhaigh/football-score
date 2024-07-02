@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import '../css/Home.css';
@@ -9,6 +9,8 @@ import Scorers from "./Scorers";
 import Results from "./Results";
 
 const Home = () => {
+    const [selectedLeague, setSelectedLeague] = useState('PL');
+
     return (
         <div>
             <div className="navbar-heading">
@@ -17,12 +19,12 @@ const Home = () => {
             <div className="container mt-4 home-container">
                 <div className="row">
                     <div className="col-12">
-                        <LeagueButtons />
+                        <LeagueButtons setSelectedLeague={setSelectedLeague} />
                     </div>
                 </div>
                 <div className="row mt-4">
                     <div className="col-lg-6 col-md-12 mb-4">
-                        <Tables />
+                        <Tables selectedLeague={selectedLeague} />
                     </div>
                     <div className="col-lg-6 col-md-12 mb-4">
                         <div className="row">
