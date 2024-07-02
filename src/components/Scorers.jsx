@@ -3,15 +3,14 @@ import { useState, useEffect } from "react";
 import '../css/Scorers.css';
 
 
-const Scorers = () => {
+const Scorers = ({ selectedLeague }) => {
 
-    const [ selectedLeague, setSelectedLeague ] = useState('PL')
     const [ selectedSeason, setSelectedSeason ] = useState('2023');
     const [ scorerData, setScorerData ] = useState(null);
 
     useEffect(() => {
         const getTopScorers = async () => {
-            if (selectedSeason) {
+            if (selectedLeague) {
                 try {
                     const response = await fetch(`http://localhost/football-score/src/api/getTopScorers.php?season=${selectedSeason}&id=${selectedLeague}`);
 

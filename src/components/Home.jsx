@@ -29,7 +29,7 @@ const Home = () => {
                     <div className="col-lg-6 col-md-12 mb-4">
                         <div className="row">
                             <div className="col-12 mb-4">
-                                <Scorers />
+                                <Scorers selectedLeague={selectedLeague}/>
                             </div>
                             <div className="col-12">
                                 <Results />
