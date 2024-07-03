@@ -2,15 +2,14 @@ import React from "react";
 import { useState, useEffect } from "react";
 import '../css/Results.css';
 
-const Results = () => {
+const Results = ({ selectedLeague }) => {
     const [selectedMatchday, setSelectedMatchday] = useState("1");
     const [selectedSeason, setSelectedSeason] = useState("2023");
-    const [selectedLeague, setSelectedLeague] = useState("PL");
     const [resultsData, setResultsData] = useState(null);
 
     useEffect(() => {
         const getWeekResults = async () => {
-            if (selectedSeason) {
+            if (selectedLeague) {
                 try {
                     const response = await fetch(`http://localhost/football-score/src/api/getResults.php?season=${selectedSeason}&id=${selectedLeague}&matchday=${selectedMatchday}`);
                     if (!response.ok) {

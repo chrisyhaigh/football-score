@@ -32,7 +32,7 @@ const Home = () => {
                                 <Scorers selectedLeague={selectedLeague}/>
                             </div>
                             <div className="col-12">
-                                <Results />
+                                <Results selectedLeague={selectedLeague}/>
                             </div>
                         </div>
                     </div>
