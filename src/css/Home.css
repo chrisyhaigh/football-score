@@ -21,5 +21,13 @@ html, body {
     padding-top: 20px;
 }
 
+.footer-nav {
+    display: none;
+}
 
+@media screen and (max-width: 992px) {
+    .footer-nav {
+        display: block;
+    }
+}
 
