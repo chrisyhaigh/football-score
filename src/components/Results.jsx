@@ -32,10 +32,7 @@ const Results = ({ selectedLeague }) => {
         <div>
             <div className="results-container">
                 <div className="results-heading-container">
-                    <h6 className="results-heading ms-2">Results</h6>
-                    <select>
-                        <option></option>
-                    </select>
+                    <h6 className="results-heading ms-2">Recent Results</h6>
                 </div>
                 <div className="results-table-container">
                     <table className="table">
