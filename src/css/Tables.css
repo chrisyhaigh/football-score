@@ -1,5 +1,8 @@
 .tables-container {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(239, 239, 239);
+    font-family: "Almarai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 11px;
     height: auto;
     border-radius: 5px;
@@ -10,5 +13,6 @@
 }
 
 .tables-heading {
+    font-family: "Staatliches", sans-serif;
     text-align: left;
 }

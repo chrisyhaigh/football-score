@@ -54,7 +54,7 @@ const Tables = ({ selectedLeague }) => {
                         {leagueData ? leagueData.map((team, index) => (
                             <tr scope="row" key={index}>
                                 <td className="team-position">{team.position}</td>
-                                <td className="text-start team-name"><img src={team.team.crest} width="16" alt={team.team.shortName}></img> {team.team.shortName}</td>
+                                <td className="text-start team-name"><img src={team.team.crest} width="15" className="me-1" alt={team.team.shortName}></img> {team.team.shortName}</td>
                                 <td className="played-games">{team.playedGames}</td>
                                 <td className="won-games">{team.won}</td>
                                 <td className="drawn-games">{team.draw}</td>

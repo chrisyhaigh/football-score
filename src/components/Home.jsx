@@ -22,7 +22,7 @@ const Home = () => {
                         <LeagueButtons setSelectedLeague={setSelectedLeague} />
                     </div>
                 </div>
-                <div className="row mt-4">
+                <div className="row mt-2">
                     <div className="col-lg-6 col-md-12 mb-4">
                         <Tables selectedLeague={selectedLeague} />
                     </div>

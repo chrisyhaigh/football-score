@@ -22,27 +22,27 @@ const LeagueButtons = ({ setSelectedLeague }) => {
                 </div>
                 <div className="league-box" key="ELC" onClick={() => setSelectedLeague('ELC')}>
                     <div className="league-content">
-                        <img width="35" src="src/league-logos/efl-logo.png" alt="Championship" />
+                        <img width="30" src="src/league-logos/efl-logo.png" alt="Championship" />
                     </div>
                 </div>
                 <div className="league-box" key="PPL" onClick={() => setSelectedLeague('PPL')}>
                     <div className="league-content">
-                        <img width="27" src="src/league-logos/Portuguese-Primeira-Liga-Logo.png" alt="Primeira Liga" />
+                        <img width="25" src="src/league-logos/Portuguese-Primeira-Liga-Logo.png" alt="Primeira Liga" />
                     </div>
                 </div>
                 <div className="league-box" key="DED" onClick={() => setSelectedLeague('DED')}>
                     <div className="league-content">
-                        <img width="40" src="src/league-logos/eredivisie-logo-png-transparent.png" alt="Eredivisie" />
+                        <img width="35" src="src/league-logos/eredivisie-logo-png-transparent.png" alt="Eredivisie" />
                     </div>
                 </div>
                 <div className="league-box" key="FL1" onClick={() => setSelectedLeague('FL1')}>
                     <div className="league-content">
-                        <img width="41" src="src/league-logos/ligue-1-logo-0.png" alt="Ligue 1" />
+                        <img width="70" src="src/league-logos/ligue-1-logo-0.png" alt="Ligue 1" />
                     </div>
                 </div>
                 <div className="league-box" key="SA" onClick={() => setSelectedLeague('SA')}>
                     <div className="league-content">
-                        <img width="70" src="src/league-logos/Serie A 2021 Logo - Download Free PNG.png" alt="Serie A" />
+                        <img width="37" src="src/league-logos/Serie A 2021 Logo - Download Free PNG.png" alt="Serie A" />
                     </div>
                 </div>
             </div>
