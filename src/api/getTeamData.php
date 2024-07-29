@@ -32,7 +32,7 @@
         'X-Auth-Token: ' . $apiKey
     ]);
 
-    $response = curl_exec();
+    $response = curl_exec($ch);
 
     if ($response === false) {
         $output = [
@@ -77,4 +77,3 @@
 
     echo json_encode($output);
 
-?>
