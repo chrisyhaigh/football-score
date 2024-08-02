@@ -4,6 +4,7 @@ import '../css/Tables.css';
 const Tables = ({ selectedLeague }) => {
     const [currentSeason, setCurrentSeason] = useState('2023');
     const [leagueData, setLeagueData] = useState(null);
+    const [leagueEmblem, setLeagueEmblem] = useState('');
 
     useEffect(() => {
         const getLeagueTable = async () => {
@@ -20,6 +21,7 @@ const Tables = ({ selectedLeague }) => {
                     console.log('League Standings: ', data);
 
                     setLeagueData(data.data.standings[0].table);
+                    setLeagueEmblem(data.data.competition.emblem);
                 } catch (error) {
                     console.log('Unable to fetch league standings', error);
                 }
@@ -32,7 +34,8 @@ const Tables = ({ selectedLeague }) => {
         <div>
             <div className="tables-container">
                 <div className="tables-heading-container">
-                    <h6 className="tables-heading ms-2">League Table</h6>
+                    <h6 className="tables-heading mt-2 ms-2">League Table</h6>
+                    <img src={leagueEmblem} alt="League Emblem" width="35" className="me-2"/>
                 </div>
                 <div className="league-table-container">
                     <table className="table">
@@ -46,7 +49,6 @@ const Tables = ({ selectedLeague }) => {
                                 <th scope="col">L</th>
                                 <th scope="col">F</th>
                                 <th scope="col">A</th>
-                                <th scope="col">GD</th>
                                 <th scope="col">PTS</th>
                             </tr>
                         </thead>
@@ -61,7 +63,6 @@ const Tables = ({ selectedLeague }) => {
                                 <td className="lost-games">{team.lost}</td>
                                 <td className="goals-for">{team.goalsFor}</td>
                                 <td className="goals-against">{team.goalsAgainst}</td>
-                                <td className="goaldifference">{team.goalDifference}</td>
                                 <td className="team-points">{team.points}</td>
                             </tr>
                         )) : <tr><td colSpan="10">No data available</td></tr>}

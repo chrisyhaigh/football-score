@@ -7,6 +7,7 @@ const Scorers = ({ selectedLeague }) => {
 
     const [ selectedSeason, setSelectedSeason ] = useState('2023');
     const [ scorerData, setScorerData ] = useState(null);
+    const [ leagueEmblem, setLeagueEmblem ] = useState('');
 
     useEffect(() => {
         const getTopScorers = async () => {
@@ -22,6 +23,7 @@ const Scorers = ({ selectedLeague }) => {
                     console.log('Top Scorer response:', data);
 
                     setScorerData(data.data.scorers);
+                    setLeagueEmblem(data.data.competition.emblem);
                 }
 
                 catch (error) {
@@ -36,7 +38,8 @@ const Scorers = ({ selectedLeague }) => {
         <div>
                 <div className="scorers-container">
                     <div className="scorers-heading-container">
-                        <h6 className="scorers-heading ms-2">Top Scorers</h6>
+                        <h6 className="scorers-heading mt-2 ms-2">Top Scorers</h6>
+                        <img src={leagueEmblem} width="35" className="me-2" alt="League Emblem" />
                     </div>
                     <div className="scorers-table-container">
                         <table className="table">

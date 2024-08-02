@@ -31,3 +31,11 @@
 .away-team {
     text-align: left;
 }
+
+
+
+@media screen and (max-width: 500px) {
+    .results-table-body {
+        font-size: 9px;
+    }
+}

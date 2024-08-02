@@ -10,6 +10,17 @@
     font-size: 11px;
 }
 
+.scorers-heading-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .scorers-heading {
     font-family: "Staatliches", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .scorers-table-body {
+        font-size: 9px;
+    }
 }

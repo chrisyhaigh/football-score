@@ -12,7 +12,18 @@
     bottom: 100%;
 }
 
+.tables-heading-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .tables-heading {
     font-family: "Staatliches", sans-serif;
     text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+    .league-table-body {
+        font-size: 9px;
+    }
 }
