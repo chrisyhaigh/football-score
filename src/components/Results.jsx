@@ -45,7 +45,7 @@ const Results = ({ selectedLeague }) => {
                                     <td className="home-team">{result.homeTeam.shortName}</td>
                                     <td><img className="team-badge" src={result.homeTeam.crest} alt={`${result.homeTeam.name} crest`} /></td>
                                     <td className="goal-score">{result.score.fullTime.home} - {result.score.fullTime.away}</td>
-                                    <td className="away-team"><img className="team-badge" src={result.awayTeam.crest} alt={`${result.awayTeam.name} crest`} />{result.awayTeam.shortName}</td>
+                                    <td className="away-team"><img className="team-badge me-3" src={result.awayTeam.crest} alt={`${result.awayTeam.name} crest`} />{result.awayTeam.shortName}</td>
                                 </tr>
                             ))}
                         </tbody>
