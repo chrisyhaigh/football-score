@@ -22,6 +22,10 @@
     text-decoration: none;
 }
 
+.nav-element-container:hover {
+    cursor: pointer;
+}
+
 .nav-element-container i {
     font-size: 1.2em;
     color: black;

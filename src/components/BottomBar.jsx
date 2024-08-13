@@ -1,23 +1,23 @@
 import React from "react";
 import '../css/BottomBar.css';
-import { NavLink } from "react-router-dom";
 
-const BottomBar = () => {
+const BottomBar = ({ setContentDisplayed }) => {
+
     return (
         <nav className="bottombar-container">
             <footer className="bottom-footer">
-                <NavLink to="/tables" className="nav-element-container" activeClassName="active">
+                <div onClick={() => setContentDisplayed('tables')} className="nav-element-container">
                     <i className="fa-solid fa-table"></i>
                     <p>Tables</p>
-                </NavLink>
-                <NavLink to="/scorers" className="nav-element-container" activeClassName="active">
+                </div>
+                <div onClick={() => setContentDisplayed('scorers')} className="nav-element-container">
                     <i className="fa-solid fa-futbol"></i>
                     <p>Scorers</p>
-                </NavLink>
-                <NavLink to="/results" className="nav-element-container" activeClassName="active">
+                </div>
+                <div onClick={() => setContentDisplayed('results')} className="nav-element-container">
                     <i className="fa-solid fa-list"></i>
                     <p>Results</p>
-                </NavLink>
+                </div>
             </footer>
         </nav>
     );
