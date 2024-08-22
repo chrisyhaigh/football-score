@@ -1,15 +1,18 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import '../css/Results.css';
+import LoadingSpinner from "./LoadingSpinner";
 
 const Results = ({ selectedLeague }) => {
-    const [selectedMatchday, setSelectedMatchday] = useState("38");
-    const [selectedSeason, setSelectedSeason] = useState("2023");
+    const [selectedMatchday, setSelectedMatchday] = useState("1");
+    const [selectedSeason, setSelectedSeason] = useState("2024");
     const [resultsData, setResultsData] = useState(null);
     const [leagueEmblem, setLeagueEmblem] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const getWeekResults = async () => {
+            setIsLoading(true);
             if (selectedLeague) {
                 try {
                     const response = await fetch(`http://localhost/football-score/src/api/getResults.php?season=${selectedSeason}&id=${selectedLeague}&matchday=${selectedMatchday}`);
@@ -23,6 +26,8 @@ const Results = ({ selectedLeague }) => {
                     setLeagueEmblem(data.data.competition.emblem);
                 } catch (error) {
                     console.log('Error finding scorer data:', error);
+                } finally {
+                    setIsLoading(false);
                 }
             }
         }
@@ -38,6 +43,9 @@ const Results = ({ selectedLeague }) => {
                     <img src={leagueEmblem} width="35" className="me-2"/>
                 </div>
                 <div className="results-table-container">
+                {isLoading ? (
+                    <LoadingSpinner />
+                ) : (
                     <table className="table results-table-body">
                         <tbody>
                             {resultsData && resultsData.map((result, index) => (
@@ -50,6 +58,7 @@ const Results = ({ selectedLeague }) => {
                             ))}
                         </tbody>
                     </table>
+                )}
                 </div>
             </div>
         </div>

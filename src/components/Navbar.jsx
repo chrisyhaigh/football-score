@@ -19,13 +19,13 @@ const Navbar = () => {
                     </div>
                 </Link>
                 <form className="brightness-mode">
-                    <label className="theme-option">
-                        <i className="fa-solid fa-moon"></i>
-                        <input type="radio" name="theme" value="dark" />
+                <label className="theme-option">
+                        <i className="fa-solid fa-sun"></i>
+                        <input className="light-theme-radio" type="radio" name="theme" value="light" defaultChecked />
                     </label>
                     <label className="theme-option">
-                        <i className="fa-solid fa-sun"></i>
-                        <input type="radio" name="theme" value="light" />
+                        <i className="fa-solid fa-moon"></i>
+                        <input className="dark-theme-radio" type="radio" name="theme" value="dark" />
                     </label>
                 </form>
             </div>
